@@ -5,6 +5,7 @@ const app = express();
 app.use(express.json())
 app.use("/api", require("./router/usuarioRouter"))
 app.use("/api", require("./router/adminRouter"))
+app.use("/api", require("./router/sisRouter"))
 
 //servidor
 const PORT= 3020;
